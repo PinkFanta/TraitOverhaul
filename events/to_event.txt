@@ -61,6 +61,7 @@ country_event = {
 	trigger = {
 		fromfrom = {
 			any_war_participant = {
+				count = all
 				has_modifier = trait_pop_war_happiness
 			}
 		}
