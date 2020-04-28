@@ -209,28 +209,28 @@ trait_insufferable = {
 	}
 }
 
+
+
 trait_throughmeasurement= {
     cost = 1
-	initial = yes
+    initial = yes
     allowed_archetypes = { BIOLOGICAL }
     modifier = {
         planet_jobs_physics_research_produces_mult = 0.1
-		planet_jobs_engineering__research_produces_mult = 0.05
+        planet_jobs_engineering__research_produces_mult = 0.05
     }
    
 }
 
 trait_archivers= {
     cost = 1
-	initial = yes
+    initial = yes
     allowed_archetypes = { BIOLOGICAL }
     modifier = {
         planet_jobs_physics_research_produces_mult = 0.05
-		planet_jobs_engineering_research_produces_mult = 0.05
-		planet_jobs_society_research_produces_mult = 0.05
+	planet_jobs_engineering_research_produces_mult = 0.05
+	planet_jobs_society_research_produces_mult = 0.05
     }
-	
-   
 }
 
 trait_big= {
@@ -245,12 +245,199 @@ trait_big= {
 
 trait_small= {
     cost = -3
-	initial = yes
+    initial = yes
     allowed_archetypes = { BIOLOGICAL }
     modifier = {
         planet_jobs_worker_produces_mult = -0.1
     }
+}
+
+trait_eternal= {
+    cost = 6
+    initial = yes
+    allowed_archetypes = { BIOLOGICAL }
+    modifier = {
+       leader_age = 1000
+    }
    
 }
 
+trait_secular= {
+    cost = 1
+    initial = yes
+    allowed_archetypes = { BIOLOGICAL }
+    modifier = {
+           pop_ethic_materialist_attraction_mult = 0.25
+	   planet_jobs_physics_research_produces_mult = 0.05
+	   planet_jobs_engineering_research_produces_mult = 0.05
+	   planet_jobs_society_research_produces_mult = 0.05
+    }
+   
+}
 
+trait_religious= {
+    cost = 1
+	initial = yes
+    allowed_archetypes = { BIOLOGICAL }
+    modifier = {
+       pop_ethic_spiritualist_attraction_mult = 0.25
+       planet_jobs_unity_produces_mult = 0.05
+    }
+   
+}
+
+trait_militant= {
+    cost = 1
+	initial = yes
+    allowed_archetypes = { BIOLOGICAL }
+    modifier = {
+       pop_ethic_militarist_attraction_mult = 0.25
+       army_damage_mult = 0.05
+    }
+   
+}
+
+trait_peaceble= {
+    cost = 1
+    initial = yes
+    allowed_archetypes = { BIOLOGICAL }
+    modifier = {
+       pop_ethic_pacifist_attraction_mult = 0.25
+       pop_empire_sprawl_mult = 0.05
+    }
+   
+}
+
+trait_hierarchists= {
+    cost = 1
+    initial = yes
+    allowed_archetypes = { BIOLOGICAL }
+    modifier = {
+       pop_ethic_authoritarian_attraction_mult = 0.25
+       planet_jobs_worker_produces_mult = 0.05
+    }
+   
+}
+
+trait_communars= {
+    cost = 1
+	initial = yes
+    allowed_archetypes = { BIOLOGICAL }
+    modifier = {
+       pop_ethic_egalitarian_attraction_mult = 0.25
+       planet_jobs_specialist_produces_mult = 0.05
+    }
+   
+}
+
+trait_xenophobes= {
+    cost = 1
+	initial = yes
+    allowed_archetypes = { BIOLOGICAL }
+    modifier = {
+       pop_ethic_xenophobe_attraction_mult = 0.25
+	   pop_growth_speed = 0.05
+    }
+   
+}
+
+trait_warrior_tradition= {
+    cost = 3
+	initial = yes
+    allowed_archetypes = { BIOLOGICAL }
+    modifier = {
+        planet_jobs_unity_produces_mult = 0.15
+		army_damage_mult = 0.2
+    }
+
+}
+
+trait_station_wagons= {
+    cost = 3
+	initial = yes
+    allowed_archetypes = { BIOLOGICAL }
+    modifier = {
+        planet_jobs_produces_mult = 0.05
+    }
+	
+}
+
+trait_superfertile= {
+    cost = 6
+	initial = yes
+    allowed_archetypes = { BIOLOGICAL }
+    modifier = { 
+	   pop_growth_speed = 0.3
+    }
+}
+
+trait_higher_race= {
+    cost = 8
+	initial = yes
+    allowed_archetypes = { BIOLOGICAL }
+    modifier = {
+        planet_jobs_produces_mult = 0.1
+        planet_jobs_physics_research_produces_mult = 0.1
+	planet_jobs_engineering_research_produces_mult = 0.
+	planet_jobs_society_research_produces_mult = 0.1
+ 	planet_jobs_unity_produces_mult = 0.1
+	pop_growth_speed = 0.1
+	pop_environment_tolerance = 0.1
+    }
+
+}
+
+trait_chemists= {
+    cost = 2
+	initial = yes
+    allowed_archetypes = { BIOLOGICAL }
+    modifier = {
+        planet_jobs_volatile_motes_produces_mult = 0.15
+    }
+	
+}
+
+trait_gas_producers= {
+    cost = 2
+	initial = yes
+    allowed_archetypes = { BIOLOGICAL }
+    modifier = {
+        planet_jobs_exotic_gases_produces_mult = 0.15
+    }
+	
+}
+
+trait_crystal_synthesizers= {
+    cost = 2
+	initial = yes
+    allowed_archetypes = { BIOLOGICAL }
+    modifier = {
+        planet_rare_crystals_motes_produces_mult = 0.15
+    }
+	
+}
+
+trait_ancient_race= {
+    cost = 6
+	initial = yes
+    allowed_archetypes = { BIOLOGICAL }
+    modifier = {
+       leader_age = 10
+       leader_skill_levels = 2
+       species_leader_experience_gain = 100
+	   
+    }
+   
+}
+
+trait_stupid= {
+    cost = -2
+	initial = yes
+    allowed_archetypes = { BIOLOGICAL }
+    modifier = {
+        planet_jobs_physics_research_produces_mult = -0.1
+		planet_jobs_engineering_research_produces_mult = -0.1
+		planet_jobs_society_research_produces_mult = -0.1
+    }
+	 
+}
