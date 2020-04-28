@@ -1,0 +1,36 @@
+namespace = to_event
+
+country_event = {
+	id = to_event.1
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		if = {
+		limit = {
+        has_trait = trait_fire_arms
+                }
+       give_technology  = { message = yes tech = tech_mass_drivers_2 }
+             }
+			 
+		if = {
+		limit = {
+		has_trait = trait_laser_weapons
+		        }	 
+		 give_technology = { message = yes tech = tech_lasers_2 }
+			 }
+			 
+	    if = {
+		limit = {
+		has_trait = trait_chemical_weapons
+		        }	 
+		 give_technology = { message = yes tech = tech_genome_mapping }
+			 }
+			 
+	    if = {
+		limit = {
+		has_trait = trait_electric_weapons
+		        }	 
+		 give_technology = { message = yes tech = tech_disruptors_1 }
+			 }
+             
+}

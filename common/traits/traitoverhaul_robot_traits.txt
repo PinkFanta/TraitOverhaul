@@ -1,0 +1,93 @@
+trait_metallurgist_processor = {
+	icon = "gfx/interface/icons/traits/trait_metallurgist_processor.dds"
+	initial = yes
+	cost = 3
+    opposites = {"trait_bad_metallurgist_processor"}
+	allowed_archetypes = { ROBOT MACHINE }
+	modifier = {
+		planet_jobs_alloys_produces_mult = 0.15
+	}
+}
+
+trait_bad_metallurgist_processor = {
+	icon = "gfx/interface/icons/traits/trait_bad_metallurgist_processor.dds"
+	initial = yes
+	cost = -3
+    opposites = {"trait_metallurgist_processor"}
+	allowed_archetypes = { ROBOT MACHINE }
+	modifier = {
+		planet_jobs_alloys_produces_mult = -0.15
+	}
+}
+
+trait_coordinating_the_processors = {
+	icon = "gfx/interface/icons/traits/trait_coordinating_the_processors.dds"
+	initial = yes
+	cost = 3
+    opposites = {"trait_poor_coordination"}
+	allowed_archetypes = { ROBOT MACHINE }
+	modifier = {
+	}
+}
+
+trait_poor_coordination = {
+	icon = "gfx/interface/icons/traits/trait_poor_coordination.dds"
+	initial = yes
+	cost = -3
+    opposites = {"trait_coordinating_the_processors"}
+	allowed_archetypes = { ROBOT MACHINE }
+	modifier = {
+	}
+}
+
+trait_low_memory_capacity = {
+	icon = "gfx/interface/icons/traits/trait_low_memory_capacity.dds"
+	initial = yes
+	cost = -2
+    opposites = {}
+	allowed_archetypes = { ROBOT MACHINE }
+	modifier = {
+		leader_skill_levels = -1
+	}
+}
+
+trait_one_unit_code = {
+	icon = "gfx/interface/icons/traits/trait_one_unit_code.dds"
+	initial = yes
+	cost = -2
+    opposites = {}
+	allowed_archetypes = { ROBOT MACHINE }
+	modifier = {
+	planet_jobs_physics_research_produces_mult = -0.1
+        planet_jobs_society_research_produces_mult = -0.1		
+	planet_jobs_engineering_research_produces_mult = -0.1
+		
+	}
+}
+
+trait_inefficient_conductivity = {
+	icon = "gfx/interface/icons/traits/trait_inefficient_conductivity.dds"
+	initial = yes
+	cost = -2
+    opposites = {}
+	allowed_archetypes = { ROBOT MACHINE }
+	modifier = {
+    planet_jobs_energy_produces_mult = -0.15
+		
+	}
+}
+
+trait_inefficient_mining_program = {
+	icon = "gfx/interface/icons/traits/trait_inefficient_mining_program.dds"
+	initial = yes
+	cost = -2
+    opposites = {}
+	allowed_archetypes = { ROBOT MACHINE }
+	modifier = {
+    planet_jobs_minerals_produces_mult = -0.15
+	}
+}
+
+
+
+

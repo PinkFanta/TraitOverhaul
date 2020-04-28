@@ -1,0 +1,213 @@
+trait_metallurgist = {
+	icon = "gfx/interface/icons/traits/trait_metallurgist.dds"
+	initial = yes
+	cost = 2
+    opposites = { "trait_alloy_foundries_ecologists" }
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+	modifier = {
+		planet_jobs_alloys_produces_mult = 0.15
+	}
+}
+
+trait_alloy_foundries_ecologists = {
+	icon = "gfx/interface/icons/traits/trait_alloy_foundries_ecologists.dds"
+	initial = yes
+	cost = -2
+    opposites = { "trait_metallurgist" }
+	allowed_archetypes = { BIOLOGICAL LITHOID}
+	modifier = {
+                planet_jobs_alloys_produces_mult = -0.15
+	}
+}
+
+trait_artisan = {
+	icon = "gfx/interface/icons/traits/trait_artisan.dds"
+	initial = yes
+	cost = 2
+    opposites = { "trait_industrial_ecologists" }
+	allowed_archetypes = { BIOLOGICAL LITHOID}
+	modifier = {
+		planet_jobs_consumer_goods_produces_mult = 0.15
+	}
+}
+
+
+
+trait_industrial_ecologists = {
+	icon = "gfx/interface/icons/traits/trait_industrial_ecologists.dds"
+	initial = yes
+	cost = -2
+    opposites = { "trait_artisan" }
+	allowed_archetypes = { BIOLOGICAL LITHOID}
+	modifier = {
+                planet_jobs_consumer_goods_produces_mult = -0.15
+	}
+}
+
+
+trait_fire_arms = {
+	icon = "gfx/interface/icons/traits/trait_fire_arms.dds"
+	initial = yes
+	cost = 1
+	opposites = {"trait_laser_weapons" "trait_chemical_weapons" "trait_electric_weapons" }
+	allowed_archetypes = { BIOLOGICAL LITHOID}
+	modifier = {
+                army_damage_mult = 0.2
+		planet_jobs_engineering_research_produces_mult = 0.05
+	}
+}
+
+trait_laser_weapons = {
+	icon = "gfx/interface/icons/traits/trait_laser_weapons.dds"
+	initial = yes
+	cost = 1
+	opposites = { "trait_fire_arms" "trait_chemical_weapons" "trait_electric_weapons" }
+	allowed_archetypes = { BIOLOGICAL LITHOID}
+	modifier = {
+                army_damage_mult = 0.2
+		planet_jobs_physics_research_produces_mult = 0.05
+	}
+}
+
+trait_chemical_weapons = {
+	icon = "gfx/interface/icons/traits/trait_chemical_weapons.dds"
+	initial = yes
+	cost = 1
+	opposites = { "trait_fire_arms" "trait_laser_weapons" "trait_electric_weapons" }
+	allowed_archetypes = { BIOLOGICAL LITHOID}
+	modifier = {
+                army_damage_mult = 0.3
+                army_collateral_damage_mult = 0.3
+                planet_jobs_society_research_produces_mult = 0.05		
+	}
+}
+
+trait_electric_weapons = {
+	icon = "gfx/interface/icons/traits/trait_electric_weapons.dds"
+	initial = yes
+	cost = 2
+	opposites = { "trait_fire_arms" "trait_laser_weapons" "trait_chemical_weapons" }
+	allowed_archetypes = { BIOLOGICAL LITHOID}
+	modifier = {
+                army_damage_mult = 0.3
+                army_collateral_damage_mult = 0.1
+                planet_jobs_physics_research_produces_mult = 0.1	
+	}
+}
+
+
+
+
+trait_urbanist = {
+	icon = "gfx/interface/icons/traits/trait_urbanist.dds"
+	initial = yes
+	cost = -2
+	opposites = { "trait_agrarian" }
+	allowed_archetypes = { BIOLOGICAL }
+	modifier = {
+		planet_jobs_food_produces_mult = -0.15
+	}
+}
+
+trait_bad_energetics = {
+	icon = "gfx/interface/icons/traits/trait_bad_energetics.dds"
+	initial = yes
+	cost = -2
+	opposites = { "trait_ingenious" }
+	allowed_archetypes = { BIOLOGICAL LITHOID}
+	modifier = {
+            planet_jobs_energy_produces_mult = -0.15
+	}
+}
+
+trait_lazy = {
+	icon = "gfx/interface/icons/traits/trait_lazy.dds"
+	initial = yes
+	cost = -2
+	opposites = { "trait_industrious" }
+	allowed_archetypes = { BIOLOGICAL LITHOID}
+	modifier = {
+                planet_jobs_minerals_produces_mult = -0.15
+	}
+}
+
+trait_uneconomical = {
+	icon = "gfx/interface/icons/traits/trait_uneconomical.dds"
+	initial = yes
+	cost = -2
+        custom_tooltip = trait_uneconomical_effect
+	opposites = { "trait_thrifty" }
+	allowed_archetypes = { BIOLOGICAL LITHOID}
+        
+}
+
+
+trait_inept = {
+	icon = "gfx/interface/icons/traits/trait_inept.dds"
+	initial = yes
+	cost = -1
+	opposites = { "trait_talented" }
+	allowed_archetypes = { BIOLOGICAL LITHOID}
+	modifier = {
+                leader_skill_levels = -1
+	}
+}
+
+trait_terrible_sociologists = {
+	icon = "gfx/interface/icons/traits/trait_terrible_sociologists.dds"
+	initial = yes
+	cost = -1
+	opposites = { "trait_natural_sociologists" }
+	allowed_archetypes = { BIOLOGICAL LITHOID}
+	modifier = {
+                planet_jobs_society_research_produces_mult = -0.15
+	}
+}
+
+trait_terrible_physicists = {
+	icon = "gfx/interface/icons/traits/trait_terrible_physicists.dds"
+	initial = yes
+	cost = -1
+	opposites = { "trait_natural_physicists" }
+	allowed_archetypes = { BIOLOGICAL LITHOID}
+	modifier = {
+                planet_jobs_physics_research_produces_mult = -0.15
+	}
+}
+
+trait_terrible_engineers = {
+	icon = "gfx/interface/icons/traits/trait_terrible_engineers.dds"
+	initial = yes
+	cost = -1
+	opposites = { "trait_natural_engineers" }
+	allowed_archetypes = { BIOLOGICAL LITHOID}
+	modifier = {
+                planet_jobs_engineering_research_produces_mult = -0.15
+	}
+}
+
+
+trait_terrible_immunity = {
+	icon = "gfx/interface/icons/traits/trait_terrible_immunity.dds"
+	initial = yes
+	cost = -4
+	opposites = { "trait_extremely_adaptive" }
+	allowed_archetypes = { BIOLOGICAL LITHOID}
+	modifier = {
+                pop_environment_tolerance = -0.20
+	}
+}
+
+trait_insufferable = {
+	icon = "gfx/interface/icons/traits/trait_insufferable.dds"
+	initial = yes
+	cost = -1
+	opposites = { "trait_resilient" }
+	allowed_archetypes = { BIOLOGICAL LITHOID}
+	modifier = {
+                army_defense_damage_mult = -0.50
+	}
+}
+
+
+
