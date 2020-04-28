@@ -2,7 +2,4 @@ trait_war_united = {
 	cost = 2
 	potential_crossbreeding_chance = 1.0
 	allowed_archetypes = { BIOLOGICAL LITHOID }
-	slave_cost = {
-		energy = 50
-	}
 }
