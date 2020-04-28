@@ -3,3 +3,22 @@ empire_init_add_technologies = {
     to_event.1
  }
 }
+
+# A war is beginning, executed for every country in the war.
+# Root = Country
+# From = War
+on_war_beginning = {
+	events = {
+		to_event.2
+	}
+}
+
+# A war has been lost
+# Root = Loser Warleader
+# From = Winner Warleader
+# FromFrom = War
+on_war_lost = {
+	events = {
+		to_event.3
+	}
+}
