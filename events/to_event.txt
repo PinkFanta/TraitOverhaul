@@ -34,3 +34,48 @@ country_event = {
 			 }
              
 }
+
+# WAR_UNITED TRAIT
+# Start war - add war happiness modifier
+country_event = {
+	id = to_event.2
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		root = {
+			has_trait = trait_war_united
+		}
+	}
+	immediate = {
+		root = {
+			add_modifier = { modifier = trait_pop_war_happiness days = -1 }
+		}
+	}
+}
+
+# End war - take away war happiness modifier if present
+country_event = {
+	id = to_event.3
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		OR = {
+			root = {
+				has_trait = trait_war_united
+			}
+			from = {
+				has_trait = trait_war_united
+			}
+		}
+	}
+	immediate = {
+		fromfrom = {
+			every_war_participant = {
+				limit = {
+					has_modifier = trait_pop_war_happiness
+				}
+			remove_modifier = trait_pop_war_happiness
+			}
+		}
+	}
+}
