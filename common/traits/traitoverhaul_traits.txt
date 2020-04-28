@@ -209,5 +209,48 @@ trait_insufferable = {
 	}
 }
 
+trait_throughmeasurement= {
+    cost = 1
+	initial = yes
+    allowed_archetypes = { BIOLOGICAL }
+    modifier = {
+        planet_jobs_physics_research_produces_mult = 0.1
+		planet_jobs_engineering__research_produces_mult = 0.05
+    }
+   
+}
+
+trait_archivers= {
+    cost = 1
+	initial = yes
+    allowed_archetypes = { BIOLOGICAL }
+    modifier = {
+        planet_jobs_physics_research_produces_mult = 0.05
+		planet_jobs_engineering_research_produces_mult = 0.05
+		planet_jobs_society_research_produces_mult = 0.05
+    }
+	
+   
+}
+
+trait_big= {
+    cost = 3
+	initial = yes
+    allowed_archetypes = { BIOLOGICAL }
+    modifier = {
+        planet_jobs_worker_produces_mult = 0.1
+    }
+   
+}
+
+trait_small= {
+    cost = -3
+	initial = yes
+    allowed_archetypes = { BIOLOGICAL }
+    modifier = {
+        planet_jobs_worker_produces_mult = -0.1
+    }
+   
+}
 
 
