@@ -1,5 +1,0 @@
-trait_pop_war_happiness = {
-	icon = "gfx/interface/icons/modifiers/mod_pop_war_happiness.dds"
-	icon_frame = 0
-	pop_happiness = 0.2
-}
