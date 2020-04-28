@@ -59,12 +59,9 @@ country_event = {
 	hide_window = yes
 	is_triggered_only = yes
 	trigger = {
-		OR = {
-			root = {
-				has_trait = trait_war_united
-			}
-			from = {
-				has_trait = trait_war_united
+		fromfrom = {
+			any_war_participant = {
+				has_modifier = trait_pop_war_happiness
 			}
 		}
 	}
