@@ -674,3 +674,140 @@ trait_automatons = {
 }  
 
 } 
+
+trait_steam_machine = {
+	cost = 2
+
+	allowed_archetypes = { MACHINE }
+
+	modifier = {
+		  planet_pops_robotics_upkeep_mult = -0.1
+		  pop_housing_usage_mult = -0.1
+	} 
+	
+}   
+
+trait_minibot = {
+	cost = -4
+
+	allowed_archetypes = { MACHINE }
+
+	modifier = {
+		  planet_jobs_simple_drone_produces_mult = -0.15
+		  army_damage_mult = -0.1
+	} 
+	
+}  
+
+trait_titanic = {
+	cost = 4
+
+	allowed_archetypes = { MACHINE }
+
+	modifier = {
+		  planet_jobs_simple_drone_produces_mult = 0.15
+		  army_damage_mult = 0.05
+		  army_collateral_damage_mult = 0.8
+	} 
+	
+}  
+
+trait_advanced_ai= {
+    cost = 3
+	initial = yes
+    allowed_archetypes = { MACHINE }
+    modifier = {
+        planet_jobs_physics_research_produces_mult = 0.15
+		planet_jobs_engineering_research_produces_mult = 0.15
+		planet_jobs_society_research_produces_mult = 0.15
+    }
+	
+   
+} 
+
+trait_organic_nervous_system = {
+	cost = -3
+    modification = no
+	allowed_archetypes = { MACHINE }
+	
+	modifier = {
+		  pop_assembly_speed = -0.1
+		  pop_resettlement_cost_mult = 0.5
+	} 
+	
+} 
+
+trait_mobile = {
+	cost = 3
+
+	allowed_archetypes = { MACHINE }
+
+	modifier = {
+		  planet_jobs_simple_drone_produces_mult = 0.1
+	} 
+	
+}  
+
+trait_stationary = {
+	cost = 3
+
+	allowed_archetypes = { MACHINE }
+
+	modifier = {
+		  planet_jobs_complex_drone_produces_mult = 0.1
+	} 
+	
+}  
+
+trait_eyeless= {
+    cost = -4
+	initial = yes
+    allowed_archetypes = { BIOLOGICAL }
+    modifier = {
+        pop_amenities_usage_mult = 0.4
+		planet_pops_consumer_goods_upkeep_mult = 0.1
+    }
+
+} 
+
+trait_effective_metallurgists {
+    cost = 2
+	initial = yes
+    allowed_archetypes = { BIOLOGICAL }
+    modifier = {
+       planet_metallurgists_minerals_upkeep_mult = -0.2
+    }
+
+} 
+
+trait_environmentalists {
+    cost = 2
+	initial = yes
+    allowed_archetypes = { BIOLOGICAL }
+    modifier = {
+       planet_artisans_minerals_upkeep_mult = -0.2
+    }
+
+} 
+
+trait_flying= {
+    cost = -4
+	initial = yes
+    allowed_archetypes = { BIOLOGICAL }
+    modifier = {
+        pop_amenities_usage_mult = -0.05
+		army_damage_mult = 0.05
+		pop_housing_usage_mult = -0.05
+    }
+
+} 
+
+trait_pioneers= {
+    cost = 1
+	initial = yes
+    allowed_archetypes = { BIOLOGICAL }
+    modifier = {
+        colony_start_num_pops_add = 1
+    }
+
+} 
