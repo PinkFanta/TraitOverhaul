@@ -441,3 +441,236 @@ trait_stupid= {
     }
 	 
 }
+
+trait_paranoid= {
+    cost = -3
+	initial = yes
+    allowed_archetypes = { BIOLOGICAL }
+    modifier = {
+        planet_jobs_unity_produces_mult = -0.15
+        pop_happines= -0.1
+    }
+
+}
+
+trait_hedontists= {
+    cost = -3
+	initial = yes
+    allowed_archetypes = { BIOLOGICAL }
+    modifier = {
+        planet_pops_organics_food_upkeep_mult = 0.10
+		planet_pops_consumer_goods_upkeep_mult = 0.20
+    }
+
+}
+
+trait_parasitec= {
+    cost = -2
+	initial = yes
+    allowed_archetypes = { BIOLOGICAL }
+    modifier = {
+       leader_age = -40
+    }
+   
+}
+
+trait_cultural= {
+    cost = 2
+	initial = yes
+    allowed_archetypes = { BIOLOGICAL }
+    modifier = {
+       planet_culture_workers_produces_mult = 0.10
+    }
+
+}
+
+trait_priests= {
+    cost = 2
+	initial = yes
+    allowed_archetypes = { BIOLOGICAL }
+    modifier = {
+       planet_priest_produces_mult = 0.10
+	   planet_high_priest_produce_mult = 0.10
+    }
+
+} 
+
+trait_cannibals= {
+    cost = -4
+	initial = yes
+    allowed_archetypes = { BIOLOGICAL }
+    modifier = { 
+	   pop_growth_speed = -0.1
+	   pop_happines = -0.1
+    }
+   
+}
+
+trait_mutants= {
+    cost = -2
+	initial = yes
+    allowed_archetypes = { BIOLOGICAL }
+    modifier = { 
+	   pop_growth_speed = -0.05
+	   leader_age = -5
+	   army_damage_mult = -0.05
+    }
+   
+}
+
+trait_rebels= {
+    cost = -1
+	initial = yes
+    allowed_archetypes = { BIOLOGICAL }
+    modifier = { 
+	   pop_happines = -0.05
+	   pop_cat_slave_political_power = +2
+	   pop_cat_worker_political_power = +1
+    }
+	
+   
+} 
+
+trait_exterminator= {
+    cost = 6
+	initial = yes
+    allowed_archetypes = { BIOLOGICAL }
+    modifier = {
+		army_attack_damage_mult = 1
+		army_morale_damage_mult = 0.5
+		army_collateral_damage_mult = 1
+    }
+
+} 
+
+trait_bloodthirsty= {
+    cost = 1
+	initial = yes
+    allowed_archetypes = { BIOLOGICAL }
+    modifier = {
+		army_morale_damage_mult = 0.25
+    }
+
+}
+
+trait_agressive= {
+    cost = -2
+	initial = yes
+    allowed_archetypes = { BIOLOGICAL }
+    modifier = {
+		army_morale_damage_mult = -0.1
+        planet_jobs_unity_produces_mult = -0.15
+    }
+    
+    trait_gluttonous= {
+    cost = -1
+	initial = yes
+    allowed_archetypes = { BIOLOGICAL }
+    modifier = {
+        planet_pops_organics_food_upkeep_mult = 0.10
+    }
+
+} 
+
+trait_diet= {
+    cost = 1
+	initial = yes
+    allowed_archetypes = { BIOLOGICAL }
+    modifier = {
+        planet_pops_organics_food_upkeep_mult = -0.10
+    }
+
+} 
+
+trait_agrobots = {
+	cost = 2
+
+	allowed_archetypes = { MACHINE }
+
+	modifier = {
+		planet_jobs_food_produces_mult = 0.15
+	} 
+	
+}
+
+trait_flying = {
+	cost = 2
+
+	allowed_archetypes = { MACHINE }
+
+	modifier = {
+		army_attack_damage_mult = 0.1
+		pop_housing_usage_mult = -0.1
+	} 
+	
+} 
+
+trait_fragile_metals = {
+	cost = -2
+
+	allowed_archetypes = { MACHINE }
+
+	modifier = {
+		army_health = -0.8
+	} 
+	
+} 
+
+trait_code_religion = {
+	cost = 1
+
+	allowed_archetypes = { MACHINE }
+
+	modifier = {
+		 planet_jobs_unity_produces_mult = 0.1
+	} 
+	
+}
+
+trait_standardized_design = {
+	cost = 3
+
+	allowed_archetypes = { MACHINE }
+
+	modifier = {
+		 pop_assembly_speed = 0.30
+	} 
+	
+} 
+
+trait_intimidation_protocols = {
+	cost = 1
+
+	allowed_archetypes = { MACHINE }
+
+	modifier = {
+		 army_morale_damage_mult = 0.25
+	} 
+	
+} 
+
+trait_higher_machine = {
+	cost = 7
+
+	allowed_archetypes = { MACHINE }
+
+	modifier = {
+          planet_jobs_produces_mult = 0.1
+		  pop_assembly_speed = 0.15
+		  planet_pops_robotics_upkeep_mult = -0.1
+	} 
+	
+}  
+
+trait_automatons = {
+	cost = 2
+
+	allowed_archetypes = { MACHINE }
+
+	modifier = {
+		  planet_pops_robotics_upkeep_mult = -0.2
+	} 
+	
+}  
+
+} 
