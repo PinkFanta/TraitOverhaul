@@ -96,7 +96,12 @@ trait_electric_weapons = {
 }
 
 
-
+trait_effective_bureaucrats{
+        initial = yes
+	cost = 2 
+	allowed_archetypes = { BIOLOGICAL LITHOID}
+	
+	}
 
 trait_urbanist = {
 	icon = "gfx/interface/icons/traits/trait_urbanist.dds"
