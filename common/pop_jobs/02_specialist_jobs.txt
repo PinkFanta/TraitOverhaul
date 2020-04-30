@@ -1208,6 +1208,16 @@ bureaucrat = {
 			planet_stability_add = 1
 		}
 	}
+	
+		triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_trait = trait_effective_bureaucrats }
+		}
+		modifier = {
+			country_admin_cap_add = 2
+		}
+	}
 
 	country_modifier = {
 		country_admin_cap_add = 10
