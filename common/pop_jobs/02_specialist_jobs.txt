@@ -1218,6 +1218,16 @@ bureaucrat = {
 			country_admin_cap_add = 2
 		}
 	}
+	
+			triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_trait = trait_uneffective_bureaucrats }
+		}
+		modifier = {
+			country_admin_cap_add = -2
+		}
+	}
 
 	country_modifier = {
 		country_admin_cap_add = 10
