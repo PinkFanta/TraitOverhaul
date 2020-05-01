@@ -103,6 +103,13 @@ trait_effective_bureaucrats{
 	
 	}
 
+trait_uneffective_bureaucrats{
+        initial = yes
+	cost = 2 
+	allowed_archetypes = { BIOLOGICAL LITHOID}
+	
+	}
+
 trait_urbanist = {
 	icon = "gfx/interface/icons/traits/trait_urbanist.dds"
 	initial = yes
