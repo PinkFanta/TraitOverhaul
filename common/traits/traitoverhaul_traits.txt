@@ -832,3 +832,16 @@ trait_pioneers= {
     }
 
 } 
+
+country_event = {
+    id = to_event.3
+    hide_window = yes
+    is_triggered_only = yes
+    immediate = {
+        if = {
+        limit = {
+        has_trait = trait_fuel_bot
+                }
+       give_technology  = { message = yes tech = tech_exotic_gases } 
+       country_base_exotic_gase_produces_add = 3
+             }
